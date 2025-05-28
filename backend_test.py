@@ -2,6 +2,7 @@ import requests
 import unittest
 import json
 import time
+import os
 from datetime import datetime
 
 class FlashCardAPITester:
@@ -12,7 +13,7 @@ class FlashCardAPITester:
         self.sutra_api_key = "sutra_j6OBb2v3MIAoiyhhVE7h8W3xW0NhNN3J1CicKrLCLVaocxb0feQpGXQWq16t"
         self.test_deck_ids = []
 
-    def run_test(self, name, method, endpoint, expected_status, data=None):
+    def run_test(self, name, method, endpoint, expected_status, data=None, is_file_download=False):
         """Run a single API test"""
         url = f"{self.base_url}/{endpoint}"
         headers = {'Content-Type': 'application/json'}
@@ -24,7 +25,10 @@ class FlashCardAPITester:
             if method == 'GET':
                 response = requests.get(url, headers=headers)
             elif method == 'POST':
-                response = requests.post(url, json=data, headers=headers)
+                if is_file_download:
+                    response = requests.post(url, json=data, headers=headers, stream=True)
+                else:
+                    response = requests.post(url, json=data, headers=headers)
             elif method == 'DELETE':
                 response = requests.delete(url, headers=headers)
 
@@ -32,10 +36,15 @@ class FlashCardAPITester:
             if success:
                 self.tests_passed += 1
                 print(f"✅ Passed - Status: {response.status_code}")
-                try:
-                    return success, response.json()
-                except:
-                    return success, {}
+                
+                if is_file_download:
+                    # For file downloads, return the raw response
+                    return success, response
+                else:
+                    try:
+                        return success, response.json()
+                    except:
+                        return success, {}
             else:
                 print(f"❌ Failed - Expected {expected_status}, got {response.status_code}")
                 try:
@@ -88,6 +97,34 @@ class FlashCardAPITester:
     def test_delete_deck(self, deck_id):
         """Test deleting a deck"""
         return self.run_test(f"Delete Deck ({deck_id})", "DELETE", f"decks/{deck_id}", 200)
+    
+    def test_export_decks(self, deck_ids=None, export_format="json"):
+        """Test exporting decks in various formats"""
+        data = {
+            "deck_ids": deck_ids if deck_ids else [],
+            "format": export_format
+        }
+        
+        return self.run_test(
+            f"Export Decks ({export_format.upper()})", 
+            "POST", 
+            "export", 
+            200, 
+            data=data,
+            is_file_download=True
+        )
+    
+    def save_export_file(self, response, export_format):
+        """Save the exported file to disk"""
+        filename = f"test_export.{export_format}"
+        
+        with open(filename, 'wb') as f:
+            for chunk in response.iter_content(chunk_size=1024):
+                if chunk:
+                    f.write(chunk)
+        
+        print(f"✅ Saved export file to {filename}")
+        return os.path.exists(filename) and os.path.getsize(filename) > 0
 
     def run_all_tests(self):
         """Run all API tests"""
@@ -103,29 +140,56 @@ class FlashCardAPITester:
         if success:
             print(f"Sutra API Test Response: {response.get('test_response', 'No response')}")
 
-        # Test generating cards in different languages
-        languages_to_test = ["english", "hindi", "spanish"]
-        topics_to_test = ["Mars", "Cooking", "Business Terms"]
+        # Test generating cards in different languages including new Gujarati and Marathi
+        languages_to_test = ["english", "hindi", "gujarati", "marathi"]
+        topics_to_test = {
+            "english": "Solar System",
+            "hindi": "Cooking",
+            "gujarati": "Family",
+            "marathi": "Education"
+        }
         
         for language in languages_to_test:
-            for topic in topics_to_test:
-                success, response = self.test_generate_cards(topic, language)
-                if success and response.get('success'):
-                    deck_id = response.get('deck', {}).get('id')
-                    if deck_id:
-                        self.test_deck_ids.append(deck_id)
-                        print(f"Created deck ID: {deck_id}")
-                        
-                        # Test getting the deck by ID
-                        self.test_get_deck_by_id(deck_id)
-                
-                # Add a small delay to avoid rate limiting
-                time.sleep(1)
+            topic = topics_to_test.get(language, "General Knowledge")
+            success, response = self.test_generate_cards(topic, language)
+            if success and response.get('success'):
+                deck_id = response.get('deck', {}).get('id')
+                if deck_id:
+                    self.test_deck_ids.append(deck_id)
+                    print(f"Created deck ID: {deck_id}")
+                    
+                    # Test getting the deck by ID
+                    self.test_get_deck_by_id(deck_id)
+            
+            # Add a small delay to avoid rate limiting
+            time.sleep(1)
 
         # Test getting all decks
         success, response = self.test_get_all_decks()
         if success:
             print(f"Found {len(response)} decks")
+        
+        # Test export functionality with all formats
+        if self.test_deck_ids:
+            # Test exporting specific decks in JSON format
+            success, response = self.test_export_decks(self.test_deck_ids[:2], "json")
+            if success:
+                self.save_export_file(response, "json")
+            
+            # Test exporting specific decks in CSV format
+            success, response = self.test_export_decks(self.test_deck_ids[:2], "csv")
+            if success:
+                self.save_export_file(response, "csv")
+            
+            # Test exporting specific decks in PDF format
+            success, response = self.test_export_decks(self.test_deck_ids[:2], "pdf")
+            if success:
+                self.save_export_file(response, "pdf")
+            
+            # Test exporting all decks (empty deck_ids)
+            success, response = self.test_export_decks(None, "json")
+            if success:
+                print("✅ Successfully exported all decks")
 
         # Test deleting decks
         for deck_id in self.test_deck_ids:
