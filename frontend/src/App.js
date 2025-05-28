@@ -342,10 +342,18 @@ function App() {
       <div className="container mx-auto px-4 py-8">
         {/* Header */}
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-gray-800 mb-2">
-            🌍 Multilingual Flash Cards
-          </h1>
-          <p className="text-gray-600">Generate AI-powered flash cards in any language</p>
+          <div className="flex items-center justify-center mb-4">
+            <div className="sutra-logo mr-3">
+              <div className="logo-knot"></div>
+            </div>
+            <div>
+              <h1 className="text-4xl font-bold text-gray-800 mb-1">
+                <span className="text-blue-600">SUTRA</span> Flash Cards
+              </h1>
+              <p className="text-gray-600">🌍 Multilingual AI-powered learning</p>
+            </div>
+          </div>
+          <p className="text-gray-500 text-sm">Powered by Sutra AI • Generate flash cards in any language</p>
         </div>
 
         {/* API Key Section */}
