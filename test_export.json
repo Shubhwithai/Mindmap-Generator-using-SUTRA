@@ -1,73 +1,73 @@
 {
-  "export_date": "2025-05-28T18:11:12.608136",
+  "export_date": "2025-05-28T19:50:37.773489",
   "total_decks": 2,
   "total_cards": 6,
   "decks": [
     {
-      "id": "1d93c382-e9df-46a8-b106-0e7ecc2ac134",
+      "id": "6d7ea8a1-7ddf-4cb7-96d7-f88fd2b5e928",
       "name": "Solar System - English",
       "topic": "Solar System",
       "language": "english",
       "cards": [
         {
-          "id": "8de412e6-d66a-4c08-b5fa-f87ba2155aec",
+          "id": "82006f0b-0ba0-4f38-91f9-b50cfc84ffe9",
           "front": "What is the Solar System?",
-          "back": "The Solar System is a gravitationally bound system comprising the Sun and the objects that orbit it, including eight planets, their moons, dwarf planets, asteroids, comets, and meteoroids. The Sun contains more than 99% of the total mass of the Solar System and provides the necessary heat and light to sustain life on Earth.",
+          "back": "The Solar System is a gravitationally bound system comprising the Sun and all celestial bodies that are influenced by its gravity. This includes eight planets, their moons, dwarf planets, comets, asteroids, and various other small bodies. The Sun, a medium-sized star at the center, contains over 99% of the total mass of the Solar System.",
           "topic": "Solar System",
           "language": "english",
-          "created_at": "2025-05-28 18:10:59.967000"
+          "created_at": "2025-05-28 19:50:25.274000"
         },
         {
-          "id": "42df55c7-730b-49dc-aaf3-1b8d6592b057",
+          "id": "b84c2f9d-bd23-4970-8a90-5ae4f8d9c2f0",
           "front": "Name the eight planets in the Solar System.",
-          "back": "The eight planets in the Solar System, in order from the Sun, are: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune. Each planet has distinct characteristics, such as size, composition, and atmosphere.",
+          "back": "The eight planets in the Solar System, in order from the Sun, are Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune. Each planet has unique characteristics, such as size, composition, and atmosphere.",
           "topic": "Solar System",
           "language": "english",
-          "created_at": "2025-05-28 18:10:59.967000"
+          "created_at": "2025-05-28 19:50:25.274000"
         },
         {
-          "id": "d9198a13-86aa-40b0-8c86-6822c971a175",
-          "front": "What is the Kuiper Belt?",
-          "back": "The Kuiper Belt is a region of the Solar System beyond the orbit of Neptune, extending from about 30 to 55 astronomical units (AU) from the Sun. It is populated with small icy bodies, including dwarf planets like Pluto, Haumea, and Makemake. The Kuiper Belt is significant for studying the early Solar System and the formation of planetary bodies.",
+          "id": "d554697d-d4b9-4a95-8221-8f8dbc38cd4a",
+          "front": "What are dwarf planets?",
+          "back": "Dwarf planets are celestial bodies that orbit the Sun and are similar to planets but do not clear their orbital paths of other debris. Examples include Pluto, Eris, Haumea, and Makemake. They are classified separately from the major planets due to their inability to dominate their orbits.",
           "topic": "Solar System",
           "language": "english",
-          "created_at": "2025-05-28 18:10:59.967000"
+          "created_at": "2025-05-28 19:50:25.274000"
         }
       ],
-      "created_at": "2025-05-28 18:10:59.967000"
+      "created_at": "2025-05-28 19:50:25.274000"
     },
     {
-      "id": "891aefe1-ed60-44e6-9105-42dce930660c",
+      "id": "9569385b-08e3-4d16-946c-fe19ca512feb",
       "name": "Cooking - Hindi",
       "topic": "Cooking",
       "language": "hindi",
       "cards": [
         {
-          "id": "147ccf9c-12e9-44ad-9ea9-89421b58eba9",
-          "front": "\u092d\u094b\u091c\u0928 \u092a\u0915\u093e\u0928\u0947 \u0915\u0940 \u0935\u093f\u0927\u093f\u092f\u093e\u0901",
-          "back": "\u092d\u094b\u091c\u0928 \u092a\u0915\u093e\u0928\u0947 \u0915\u0940 \u0915\u0908 \u0935\u093f\u0927\u093f\u092f\u093e\u0901 \u0939\u094b\u0924\u0940 \u0939\u0948\u0902, \u091c\u0948\u0938\u0947 \u0915\u093f \u0909\u092c\u093e\u0932\u0928\u093e, \u092d\u0942\u0928\u0928\u093e, \u092d\u093e\u092a \u092e\u0947\u0902 \u092a\u0915\u093e\u0928\u093e, \u0914\u0930 \u0924\u0932\u0928\u093e\u0964 \u092f\u0947 \u0935\u093f\u0927\u093f\u092f\u093e\u0901 \u0938\u093e\u092e\u0917\u094d\u0930\u0940 \u0915\u0947 \u092a\u094b\u0937\u0923 \u0924\u0924\u094d\u0935\u094b\u0902 \u0915\u094b \u092c\u0928\u093e\u090f \u0930\u0916\u0928\u0947 \u0914\u0930 \u0938\u094d\u0935\u093e\u0926 \u092c\u0922\u093c\u093e\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u092e\u0939\u0924\u094d\u0935\u092a\u0942\u0930\u094d\u0923 \u0939\u0948\u0902\u0964",
+          "id": "5e7cbe4f-8953-43fa-9e23-832e1e2d2e12",
+          "front": "\u0915\u0941\u0915\u093f\u0902\u0917 \u0915\u0947 \u0924\u0930\u0940\u0915\u0947",
+          "back": "\u0915\u0941\u0915\u093f\u0902\u0917 \u0915\u0947 \u092e\u0941\u0916\u094d\u092f \u0924\u0930\u0940\u0915\u0947 \u0939\u0948\u0902: \u0909\u092c\u093e\u0932\u0928\u093e, \u092d\u0942\u0928\u0928\u093e, \u0924\u0932\u0928\u093e, \u0914\u0930 \u092d\u093e\u092a \u092e\u0947\u0902 \u092a\u0915\u093e\u0928\u093e\u0964 \u0909\u092c\u093e\u0932\u0928\u0947 \u092e\u0947\u0902 \u092a\u093e\u0928\u0940 \u092f\u093e \u0926\u0941\u0927 \u0915\u093e \u0909\u092a\u092f\u094b\u0917 \u0939\u094b\u0924\u093e \u0939\u0948, \u092d\u0942\u0928\u0928\u0947 \u092e\u0947\u0902 \u0924\u0947\u0932 \u092e\u0947\u0902 \u092a\u0915\u093e\u092f\u093e \u091c\u093e\u0924\u093e \u0939\u0948, \u0924\u0932\u0928\u0947 \u092e\u0947\u0902 \u0916\u093e\u0926\u094d\u092f \u092a\u0926\u093e\u0930\u094d\u0925\u094b\u0902 \u0915\u094b \u092a\u0942\u0930\u0940 \u0924\u0930\u0939 \u0938\u0947 \u0924\u0947\u0932 \u092e\u0947\u0902 \u0921\u0941\u092c\u094b\u092f\u093e \u091c\u093e\u0924\u093e \u0939\u0948, \u0914\u0930 \u092d\u093e\u092a \u092e\u0947\u0902 \u092a\u0915\u093e\u0928\u0947 \u092e\u0947\u0902 \u0917\u0930\u094d\u092e \u092d\u093e\u092a \u0915\u093e \u0909\u092a\u092f\u094b\u0917 \u0915\u093f\u092f\u093e \u091c\u093e\u0924\u093e \u0939\u0948\u0964",
           "topic": "Cooking",
           "language": "hindi",
-          "created_at": "2025-05-28 18:11:03.824000"
+          "created_at": "2025-05-28 19:50:28.945000"
         },
         {
-          "id": "7fbcc8c8-6184-4b53-9d88-0b26402a3be7",
-          "front": "\u092e\u0938\u093e\u0932\u094b\u0902 \u0915\u093e \u092e\u0939\u0924\u094d\u0935",
-          "back": "\u092d\u093e\u0930\u0924\u0940\u092f \u0916\u093e\u0928\u093e \u092a\u0915\u093e\u0928\u0947 \u092e\u0947\u0902 \u092e\u0938\u093e\u0932\u0947 \u090f\u0915 \u092e\u0939\u0924\u094d\u0935\u092a\u0942\u0930\u094d\u0923 \u092d\u0942\u092e\u093f\u0915\u093e \u0928\u093f\u092d\u093e\u0924\u0947 \u0939\u0948\u0902\u0964 \u092f\u0947 \u0928 \u0915\u0947\u0935\u0932 \u0938\u094d\u0935\u093e\u0926 \u0914\u0930 \u0938\u0941\u0917\u0902\u0927 \u0926\u0947\u0924\u0947 \u0939\u0948\u0902, \u092c\u0932\u094d\u0915\u093f \u0915\u0908 \u0938\u094d\u0935\u093e\u0938\u094d\u0925\u094d\u092f \u0932\u093e\u092d \u092d\u0940 \u092a\u094d\u0930\u0926\u093e\u0928 \u0915\u0930\u0924\u0947 \u0939\u0948\u0902\u0964 \u091c\u0948\u0938\u0947, \u0939\u0932\u094d\u0926\u0940 \u090f\u0902\u091f\u0940-\u0907\u0902\u092b\u094d\u0932\u0947\u092e\u0947\u091f\u0930\u0940 \u0939\u094b\u0924\u0940 \u0939\u0948, \u091c\u092c\u0915\u093f \u091c\u0940\u0930\u093e \u092a\u093e\u091a\u0928 \u092e\u0947\u0902 \u092e\u0926\u0926 \u0915\u0930\u0924\u093e \u0939\u0948\u0964",
+          "id": "901ae353-62d4-4ac9-a659-c6cc22fda94b",
+          "front": "\u092e\u0938\u093e\u0932\u0947",
+          "back": "\u092e\u0938\u093e\u0932\u0947 \u0916\u093e\u0928\u093e \u092a\u0915\u093e\u0928\u0947 \u092e\u0947\u0902 \u0938\u094d\u0935\u093e\u0926 \u0914\u0930 \u0938\u0941\u0917\u0902\u0927 \u091c\u094b\u0921\u093c\u0924\u0947 \u0939\u0948\u0902\u0964 \u092d\u093e\u0930\u0924\u0940\u092f \u0916\u093e\u0928\u093e \u092a\u0915\u093e\u0928\u0947 \u092e\u0947\u0902 \u0906\u092e\u0924\u094c\u0930 \u092a\u0930 \u091c\u0940\u0930\u093e, \u0927\u0928\u093f\u092f\u093e, \u0939\u0932\u094d\u0926\u0940, \u092e\u093f\u0930\u094d\u091a, \u0914\u0930 \u0905\u0926\u0930\u0915 \u091c\u0948\u0938\u0947 \u092e\u0938\u093e\u0932\u094b\u0902 \u0915\u093e \u0907\u0938\u094d\u0924\u0947\u092e\u093e\u0932 \u0915\u093f\u092f\u093e \u091c\u093e\u0924\u093e \u0939\u0948\u0964 \u0938\u0939\u0940 \u092e\u093e\u0924\u094d\u0930\u093e \u092e\u0947\u0902 \u092e\u0938\u093e\u0932\u0947 \u092e\u093f\u0932\u093e\u0928\u0947 \u0938\u0947 \u092d\u094b\u091c\u0928 \u0915\u093e \u0938\u094d\u0935\u093e\u0926 \u092c\u0922\u093c\u0924\u093e \u0939\u0948\u0964",
           "topic": "Cooking",
           "language": "hindi",
-          "created_at": "2025-05-28 18:11:03.824000"
+          "created_at": "2025-05-28 19:50:28.945000"
         },
         {
-          "id": "d3d97c72-041c-4d64-8c81-8e24d845a601",
-          "front": "\u0938\u0941\u0930\u0915\u094d\u0937\u093f\u0924 \u092d\u094b\u091c\u0928 \u092a\u0915\u093e\u0928\u0947 \u0915\u0947 \u0924\u0930\u0940\u0915\u0947",
-          "back": "\u092d\u094b\u091c\u0928 \u092a\u0915\u093e\u0928\u0947 \u0915\u0947 \u0926\u094c\u0930\u093e\u0928 \u0938\u092b\u093e\u0908 \u0915\u093e \u0927\u094d\u092f\u093e\u0928 \u0930\u0916\u0928\u093e \u0906\u0935\u0936\u094d\u092f\u0915 \u0939\u0948\u0964 \u0938\u092c\u094d\u091c\u093f\u092f\u094b\u0902 \u0914\u0930 \u092e\u093e\u0902\u0938 \u0915\u094b \u0905\u091a\u094d\u091b\u0947 \u0938\u0947 \u0927\u094b\u0928\u093e, \u0915\u091a\u094d\u091a\u0947 \u0914\u0930 \u092a\u0915\u0947 \u0916\u093e\u0926\u094d\u092f \u092a\u0926\u093e\u0930\u094d\u0925\u094b\u0902 \u0915\u094b \u0905\u0932\u0917 \u0930\u0916\u0928\u093e, \u0914\u0930 \u0938\u0939\u0940 \u0924\u093e\u092a\u092e\u093e\u0928 \u092a\u0930 \u0916\u093e\u0928\u093e \u092a\u0915\u093e\u0928\u093e, \u0938\u092d\u0940 \u0916\u093e\u0926\u094d\u092f \u091c\u0928\u093f\u0924 \u0930\u094b\u0917\u094b\u0902 \u0938\u0947 \u092c\u091a\u0928\u0947 \u092e\u0947\u0902 \u092e\u0926\u0926 \u0915\u0930\u0924\u0947 \u0939\u0948\u0902\u0964",
+          "id": "feab38ae-1cc9-43a4-99af-5f400b42d747",
+          "front": "\u0938\u094d\u0935\u093e\u0938\u094d\u0925\u094d\u092f\u0935\u0930\u094d\u0927\u0915 \u0916\u093e\u0928\u093e \u092c\u0928\u093e\u0928\u093e",
+          "back": "\u0938\u094d\u0935\u093e\u0938\u094d\u0925\u094d\u092f\u0935\u0930\u094d\u0927\u0915 \u0916\u093e\u0928\u093e \u092c\u0928\u093e\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0924\u093e\u091c\u0947 \u0938\u093e\u092e\u0917\u094d\u0930\u0940 \u0915\u093e \u0909\u092a\u092f\u094b\u0917 \u0915\u0930\u0928\u093e \u091c\u0930\u0942\u0930\u0940 \u0939\u0948\u0964 \u0915\u092e \u0924\u0947\u0932, \u0928\u092e\u0915 \u0914\u0930 \u091a\u0940\u0928\u0940 \u0915\u093e \u092a\u094d\u0930\u092f\u094b\u0917 \u0915\u0930\u0928\u093e, \u0914\u0930 \u092b\u0932-\u0938\u092c\u094d\u091c\u093f\u092f\u094b\u0902 \u0915\u094b \u0936\u093e\u092e\u093f\u0932 \u0915\u0930\u0928\u093e \u090f\u0915 \u0938\u094d\u0935\u0938\u094d\u0925 \u092d\u094b\u091c\u0928 \u0924\u0948\u092f\u093e\u0930 \u0915\u0930\u0928\u0947 \u092e\u0947\u0902 \u092e\u0926\u0926 \u0915\u0930\u0924\u093e \u0939\u0948\u0964 \u0938\u093e\u0925 \u0939\u0940, \u092d\u093e\u092a \u092e\u0947\u0902 \u092a\u0915\u093e\u0928\u093e \u092f\u093e \u0917\u094d\u0930\u093f\u0932 \u0915\u0930\u0928\u093e \u0924\u0932\u0947 \u0939\u0941\u090f \u0916\u093e\u0928\u0947 \u0915\u0940 \u0924\u0941\u0932\u0928\u093e \u092e\u0947\u0902 \u0905\u0927\u093f\u0915 \u0938\u094d\u0935\u093e\u0938\u094d\u0925\u094d\u092f\u0935\u0930\u094d\u0927\u0915 \u0939\u094b\u0924\u093e \u0939\u0948\u0964",
           "topic": "Cooking",
           "language": "hindi",
-          "created_at": "2025-05-28 18:11:03.824000"
+          "created_at": "2025-05-28 19:50:28.945000"
         }
       ],
-      "created_at": "2025-05-28 18:11:03.824000"
+      "created_at": "2025-05-28 19:50:28.945000"
     }
   ]
 }
