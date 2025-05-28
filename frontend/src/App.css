@@ -38,6 +38,62 @@
   }
 }
 
+/* SUTRA Logo Styles */
+.sutra-logo {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-knot {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-knot::before {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border: 3px solid white;
+  border-radius: 50%;
+  background: transparent;
+}
+
+.logo-knot::after {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: white;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Enhanced Logo with Interlocking Effect */
+@keyframes logoGlow {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+  }
+}
+
+.sutra-logo:hover .logo-knot {
+  animation: logoGlow 2s ease-in-out infinite;
+}
+
 /* Flash Card Styles */
 .flash-card {
   perspective: 1000px;
