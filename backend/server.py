@@ -1,4 +1,4 @@
-from fastapi import FastAPI, APIRouter, HTTPException
+from fastapi import FastAPI, APIRouter, HTTPException, Response
 from dotenv import load_dotenv
 from starlette.middleware.cors import CORSMiddleware
 from motor.motor_asyncio import AsyncIOMotorClient
@@ -11,6 +11,16 @@ import uuid
 from datetime import datetime
 import json
 from openai import AsyncOpenAI
+import csv
+import io
+from reportlab.lib.pagesizes import letter, A4
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, PageBreak, Table, TableStyle
+from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
+from reportlab.lib.units import inch
+from reportlab.lib import colors
+from reportlab.pdfbase import pdfutils
+from reportlab.pdfbase.ttfonts import TTFont
+from reportlab.pdfbase import pdfmetrics
 
 
 ROOT_DIR = Path(__file__).parent
@@ -63,6 +73,10 @@ class GenerateCardsResponse(BaseModel):
     deck: FlashCardDeck
     success: bool
     message: str
+
+class ExportRequest(BaseModel):
+    deck_ids: List[str] = []  # Empty means export all decks
+    format: str = "json"  # json, csv, pdf
 
 # Add your routes to the router instead of directly to app
 @api_router.get("/")
@@ -124,16 +138,18 @@ async def generate_flash_cards(request: GenerateCardsRequest):
             base_url='https://api.two.ai/v2',
         )
 
-        # Create prompt for generating flash cards
+        # Create prompt for generating flash cards with updated language support
         language_instruction = {
             "english": "in English",
             "hindi": "हिंदी में",
-            "spanish": "en español",
+            "spanish": "en español", 
             "french": "en français",
             "german": "auf Deutsch",
             "chinese": "用中文",
             "japanese": "日本語で",
-            "arabic": "بالعربية"
+            "arabic": "بالعربية",
+            "gujarati": "ગુજરાતી માં",
+            "marathi": "मराठी मध्ये"
         }.get(request.language.lower(), "in English")
 
         prompt = f"""Create {request.count} educational flash cards about "{request.topic}" {language_instruction}. 
@@ -235,6 +251,137 @@ async def delete_deck(deck_id: str):
     if result.deleted_count == 0:
         raise HTTPException(status_code=404, detail="Deck not found")
     return {"message": "Deck deleted successfully"}
+
+@api_router.post("/export")
+async def export_decks(request: ExportRequest):
+    """Export flash card decks in various formats"""
+    try:
+        # Get decks to export
+        if request.deck_ids:
+            # Export specific decks
+            decks_data = []
+            for deck_id in request.deck_ids:
+                deck = await db.flash_decks.find_one({"id": deck_id})
+                if deck:
+                    decks_data.append(deck)
+        else:
+            # Export all decks
+            decks_data = await db.flash_decks.find().to_list(1000)
+
+        if not decks_data:
+            raise HTTPException(status_code=404, detail="No decks found to export")
+
+        # Convert to FlashCardDeck objects
+        decks = [FlashCardDeck(**deck) for deck in decks_data]
+
+        if request.format.lower() == "json":
+            return export_to_json(decks)
+        elif request.format.lower() == "csv":
+            return export_to_csv(decks)
+        elif request.format.lower() == "pdf":
+            return export_to_pdf(decks)
+        else:
+            raise HTTPException(status_code=400, detail="Unsupported export format")
+
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Export failed: {str(e)}")
+
+def export_to_json(decks: List[FlashCardDeck]):
+    """Export decks to JSON format"""
+    export_data = {
+        "export_date": datetime.utcnow().isoformat(),
+        "total_decks": len(decks),
+        "total_cards": sum(len(deck.cards) for deck in decks),
+        "decks": [deck.dict() for deck in decks]
+    }
+    
+    json_content = json.dumps(export_data, indent=2, default=str)
+    
+    return Response(
+        content=json_content,
+        media_type="application/json",
+        headers={"Content-Disposition": f"attachment; filename=flashcards_export_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"}
+    )
+
+def export_to_csv(decks: List[FlashCardDeck]):
+    """Export decks to CSV format"""
+    output = io.StringIO()
+    writer = csv.writer(output)
+    
+    # Write header
+    writer.writerow(['Deck Name', 'Topic', 'Language', 'Card Front', 'Card Back', 'Created Date'])
+    
+    # Write data
+    for deck in decks:
+        for card in deck.cards:
+            writer.writerow([
+                deck.name,
+                deck.topic,
+                deck.language,
+                card.front,
+                card.back,
+                card.created_at.strftime('%Y-%m-%d %H:%M:%S') if card.created_at else ''
+            ])
+    
+    csv_content = output.getvalue()
+    output.close()
+    
+    return Response(
+        content=csv_content,
+        media_type="text/csv",
+        headers={"Content-Disposition": f"attachment; filename=flashcards_export_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"}
+    )
+
+def export_to_pdf(decks: List[FlashCardDeck]):
+    """Export decks to PDF format"""
+    buffer = io.BytesIO()
+    doc = SimpleDocTemplate(buffer, pagesize=A4)
+    
+    # Get styles
+    styles = getSampleStyleSheet()
+    title_style = ParagraphStyle('CustomTitle', parent=styles['Title'], fontSize=24, spaceAfter=30)
+    heading_style = ParagraphStyle('CustomHeading', parent=styles['Heading1'], fontSize=16, spaceAfter=12)
+    front_style = ParagraphStyle('CardFront', parent=styles['Normal'], fontSize=12, fontName='Helvetica-Bold', spaceAfter=6)
+    back_style = ParagraphStyle('CardBack', parent=styles['Normal'], fontSize=10, spaceAfter=12)
+    
+    story = []
+    
+    # Add title
+    story.append(Paragraph("Flash Cards Export", title_style))
+    story.append(Paragraph(f"Generated on: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}", styles['Normal']))
+    story.append(Paragraph(f"Total Decks: {len(decks)}", styles['Normal']))
+    story.append(Paragraph(f"Total Cards: {sum(len(deck.cards) for deck in decks)}", styles['Normal']))
+    story.append(Spacer(1, 20))
+    
+    # Add each deck
+    for deck_idx, deck in enumerate(decks):
+        if deck_idx > 0:
+            story.append(PageBreak())
+        
+        # Deck header
+        story.append(Paragraph(f"Deck: {deck.name}", heading_style))
+        story.append(Paragraph(f"Topic: {deck.topic} | Language: {deck.language.title()}", styles['Normal']))
+        story.append(Paragraph(f"Cards: {len(deck.cards)}", styles['Normal']))
+        story.append(Spacer(1, 12))
+        
+        # Add cards
+        for card_idx, card in enumerate(deck.cards):
+            story.append(Paragraph(f"Card {card_idx + 1}:", styles['Heading2']))
+            story.append(Paragraph(f"Front: {card.front}", front_style))
+            story.append(Paragraph(f"Back: {card.back}", back_style))
+            story.append(Spacer(1, 8))
+    
+    # Build PDF
+    doc.build(story)
+    buffer.seek(0)
+    pdf_content = buffer.getvalue()
+    buffer.close()
+    
+    return Response(
+        content=pdf_content,
+        media_type="application/pdf",
+        headers={"Content-Disposition": f"attachment; filename=flashcards_export_{datetime.now().strftime('%Y%m%d_%H%M%S')}.pdf"}
+    )
 
 # Include the router in the main app
 app.include_router(api_router)

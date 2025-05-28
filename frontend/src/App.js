@@ -27,6 +27,8 @@ const LanguageSelector = ({ selected, onChange }) => {
   const languages = [
     { code: 'english', name: 'English', flag: '🇺🇸' },
     { code: 'hindi', name: 'हिंदी', flag: '🇮🇳' },
+    { code: 'gujarati', name: 'ગુજરાતી', flag: '🇮🇳' },
+    { code: 'marathi', name: 'मराठी', flag: '🇮🇳' },
     { code: 'spanish', name: 'Español', flag: '🇪🇸' },
     { code: 'french', name: 'Français', flag: '🇫🇷' },
     { code: 'german', name: 'Deutsch', flag: '🇩🇪' },
@@ -36,7 +38,7 @@ const LanguageSelector = ({ selected, onChange }) => {
   ];
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
+    <div className="grid grid-cols-2 md:grid-cols-5 gap-2">
       {languages.map((lang) => (
         <button
           key={lang.code}
@@ -55,6 +57,126 @@ const LanguageSelector = ({ selected, onChange }) => {
   );
 };
 
+const ExportModal = ({ isOpen, onClose, decks, onExport }) => {
+  const [selectedDecks, setSelectedDecks] = useState([]);
+  const [exportFormat, setExportFormat] = useState('json');
+  const [selectAll, setSelectAll] = useState(false);
+
+  useEffect(() => {
+    if (selectAll) {
+      setSelectedDecks(decks.map(deck => deck.id));
+    } else {
+      setSelectedDecks([]);
+    }
+  }, [selectAll, decks]);
+
+  const handleDeckToggle = (deckId) => {
+    setSelectedDecks(prev => 
+      prev.includes(deckId) 
+        ? prev.filter(id => id !== deckId)
+        : [...prev, deckId]
+    );
+  };
+
+  const handleExport = () => {
+    onExport(selectedDecks, exportFormat);
+    onClose();
+  };
+
+  if (!isOpen) return null;
+
+  return (
+    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+      <div className="bg-white rounded-xl shadow-2xl p-6 max-w-md w-full mx-4">
+        <div className="flex justify-between items-center mb-4">
+          <h2 className="text-xl font-semibold text-gray-800">📁 Export Flash Cards</h2>
+          <button onClick={onClose} className="text-gray-500 hover:text-gray-700">
+            ✕
+          </button>
+        </div>
+
+        <div className="space-y-4">
+          {/* Format Selection */}
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-2">Export Format</label>
+            <div className="grid grid-cols-3 gap-2">
+              {[
+                { value: 'json', label: '📄 JSON', desc: 'For backup' },
+                { value: 'csv', label: '📊 CSV', desc: 'For Excel' },
+                { value: 'pdf', label: '📋 PDF', desc: 'For printing' }
+              ].map(format => (
+                <button
+                  key={format.value}
+                  onClick={() => setExportFormat(format.value)}
+                  className={`p-3 text-center rounded-lg border-2 transition-all ${
+                    exportFormat === format.value
+                      ? 'border-blue-500 bg-blue-50 text-blue-700'
+                      : 'border-gray-200 hover:border-gray-300'
+                  }`}
+                >
+                  <div className="text-sm font-medium">{format.label}</div>
+                  <div className="text-xs text-gray-500">{format.desc}</div>
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* Deck Selection */}
+          <div>
+            <div className="flex justify-between items-center mb-2">
+              <label className="text-sm font-medium text-gray-700">Select Decks</label>
+              <button
+                onClick={() => setSelectAll(!selectAll)}
+                className="text-xs text-blue-600 hover:text-blue-800"
+              >
+                {selectAll ? 'Deselect All' : 'Select All'}
+              </button>
+            </div>
+            
+            <div className="max-h-48 overflow-y-auto border border-gray-200 rounded-lg">
+              {decks.length === 0 ? (
+                <p className="p-4 text-gray-500 text-center">No decks available</p>
+              ) : (
+                decks.map(deck => (
+                  <div key={deck.id} className="flex items-center p-3 border-b border-gray-100 last:border-b-0">
+                    <input
+                      type="checkbox"
+                      checked={selectedDecks.includes(deck.id)}
+                      onChange={() => handleDeckToggle(deck.id)}
+                      className="mr-3 h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
+                    />
+                    <div className="flex-1">
+                      <div className="text-sm font-medium text-gray-900">{deck.name}</div>
+                      <div className="text-xs text-gray-500">{deck.cards.length} cards • {deck.language}</div>
+                    </div>
+                  </div>
+                ))
+              )}
+            </div>
+          </div>
+
+          {/* Export Button */}
+          <div className="flex gap-3 pt-2">
+            <button
+              onClick={onClose}
+              className="flex-1 px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50"
+            >
+              Cancel
+            </button>
+            <button
+              onClick={handleExport}
+              disabled={selectedDecks.length === 0 && exportFormat !== 'json'}
+              className="flex-1 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              Export {selectedDecks.length > 0 ? `(${selectedDecks.length})` : 'All'}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 function App() {
   const [apiKey, setApiKey] = useState(localStorage.getItem('sutra_api_key') || '');
   const [topic, setTopic] = useState('');
@@ -68,6 +190,8 @@ function App() {
   const [showDecks, setShowDecks] = useState(false);
   const [testingApi, setTestingApi] = useState(false);
   const [apiStatus, setApiStatus] = useState(null);
+  const [showExportModal, setShowExportModal] = useState(false);
+  const [exporting, setExporting] = useState(false);
 
   useEffect(() => {
     loadDecks();
@@ -161,6 +285,38 @@ function App() {
         alert('Error deleting deck: ' + error.message);
       }
     }
+  };
+
+  const exportDecks = async (selectedDeckIds, format) => {
+    setExporting(true);
+    try {
+      const response = await axios.post(`${API}/export`, {
+        deck_ids: selectedDeckIds,
+        format: format
+      }, {
+        responseType: 'blob' // Important for file downloads
+      });
+
+      // Create download link
+      const url = window.URL.createObjectURL(new Blob([response.data]));
+      const link = document.createElement('a');
+      link.href = url;
+      
+      // Set filename based on format
+      const timestamp = new Date().toISOString().slice(0, 19).replace(/[:]/g, '-');
+      const extension = format === 'json' ? 'json' : format === 'csv' ? 'csv' : 'pdf';
+      link.setAttribute('download', `flashcards_export_${timestamp}.${extension}`);
+      
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      window.URL.revokeObjectURL(url);
+
+      alert(`Successfully exported ${selectedDeckIds.length || allDecks.length} deck(s) as ${format.toUpperCase()}`);
+    } catch (error) {
+      alert('Export failed: ' + (error.response?.data?.detail || error.message));
+    }
+    setExporting(false);
   };
 
   const nextCard = () => {
@@ -286,6 +442,14 @@ function App() {
           >
             📋 My Decks ({allDecks.length})
           </button>
+          
+          <button
+            onClick={() => setShowExportModal(true)}
+            disabled={allDecks.length === 0}
+            className="px-6 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 disabled:opacity-50 transition-colors"
+          >
+            📁 Export Decks
+          </button>
         </div>
 
         {/* Deck List */}
@@ -364,6 +528,24 @@ function App() {
 
             <div className="mt-4 text-center">
               <p className="text-sm text-gray-500">Click on the card to flip it</p>
+            </div>
+          </div>
+        )}
+
+        {/* Export Modal */}
+        <ExportModal
+          isOpen={showExportModal}
+          onClose={() => setShowExportModal(false)}
+          decks={allDecks}
+          onExport={exportDecks}
+        />
+
+        {/* Loading overlay for export */}
+        {exporting && (
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+            <div className="bg-white rounded-lg p-6 flex items-center space-x-4">
+              <div className="loading-spinner"></div>
+              <span className="text-gray-700">Exporting your flash cards...</span>
             </div>
           </div>
         )}
