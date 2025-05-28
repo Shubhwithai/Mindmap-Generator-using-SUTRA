@@ -1,262 +1,73 @@
 {
-  "export_date": "2025-05-28T18:09:15.120877",
-  "total_decks": 7,
-  "total_cards": 24,
+  "export_date": "2025-05-28T18:11:12.608136",
+  "total_decks": 2,
+  "total_cards": 6,
   "decks": [
     {
-      "id": "7061d950-f5f0-4ce7-ad91-af53a7f47339",
-      "name": "Mars - English",
-      "topic": "Mars",
-      "language": "english",
-      "cards": [
-        {
-          "id": "ff88687b-116a-4b47-b11c-8db5c6b88607",
-          "front": "Mars",
-          "back": "Mars is the fourth planet from the Sun in our solar system, known for its reddish appearance due to iron oxide (rust) on its surface. It has a thin atmosphere composed mostly of carbon dioxide, and it features the largest volcano (Olympus Mons) and canyon (Valles Marineris) in the solar system.",
-          "topic": "Mars",
-          "language": "english",
-          "created_at": "2025-05-28 17:58:37.655000"
-        },
-        {
-          "id": "61f25945-ca2d-4684-8569-7903e1c72f1e",
-          "front": "Moons of Mars",
-          "back": "Mars has two small moons named Phobos and Deimos. Both are irregularly shaped and are thought to be captured asteroids. Phobos is the larger and closer moon, gradually spiraling towards Mars, while Deimos orbits at a farther distance and is moving away from the planet.",
-          "topic": "Mars",
-          "language": "english",
-          "created_at": "2025-05-28 17:58:37.655000"
-        },
-        {
-          "id": "203c3246-ca80-4bf0-89a0-8b1521c08159",
-          "front": "Water on Mars",
-          "back": "Evidence suggests that liquid water once flowed on the surface of Mars, as indicated by dry riverbeds and minerals that form in water. Today, most water exists as ice at the polar caps and possibly as briny liquid under the surface, leading scientists to explore the potential for past life on the planet.",
-          "topic": "Mars",
-          "language": "english",
-          "created_at": "2025-05-28 17:58:37.655000"
-        }
-      ],
-      "created_at": "2025-05-28 17:58:37.655000"
-    },
-    {
-      "id": "0a08adda-cfa7-4679-b840-81afe5db10af",
-      "name": "Cooking - Hindi",
-      "topic": "Cooking",
-      "language": "hindi",
-      "cards": [
-        {
-          "id": "c7dba24b-d838-4053-b9b3-b28b59e4c1dc",
-          "front": "\u092d\u094b\u091c\u0928 \u092a\u0915\u093e\u0928\u0947 \u0915\u0947 \u0924\u0930\u0940\u0915\u0947",
-          "back": "\u092d\u094b\u091c\u0928 \u092a\u0915\u093e\u0928\u0947 \u0915\u0947 \u092e\u0941\u0916\u094d\u092f \u0924\u0930\u0940\u0915\u0947 \u092e\u0947\u0902 \u0909\u092c\u093e\u0932\u0928\u093e, \u092d\u0942\u0928\u0928\u093e, \u0938\u0947\u0902\u0915\u0928\u093e, \u0914\u0930 \u092d\u093e\u092a \u092e\u0947\u0902 \u092a\u0915\u093e\u0928\u093e \u0936\u093e\u092e\u093f\u0932 \u0939\u0948\u0902\u0964 \u0909\u092c\u093e\u0932\u0928\u0947 \u092e\u0947\u0902 \u092a\u093e\u0928\u0940 \u0915\u093e \u0909\u092a\u092f\u094b\u0917 \u0915\u093f\u092f\u093e \u091c\u093e\u0924\u093e \u0939\u0948, \u091c\u092c\u0915\u093f \u092d\u0942\u0928\u0928\u0947 \u092e\u0947\u0902 \u0924\u0947\u0932 \u092f\u093e \u0918\u0940 \u0915\u093e\u0964 \u0938\u0947\u0902\u0915\u0928\u0947 \u092e\u0947\u0902 \u0913\u0935\u0928 \u0915\u093e \u0909\u092a\u092f\u094b\u0917 \u0939\u094b\u0924\u093e \u0939\u0948, \u0914\u0930 \u092d\u093e\u092a \u092e\u0947\u0902 \u092a\u0915\u093e\u0928\u0947 \u0938\u0947 \u092a\u094b\u0937\u0915 \u0924\u0924\u094d\u0935 \u0938\u0941\u0930\u0915\u094d\u0937\u093f\u0924 \u0930\u0939\u0924\u0947 \u0939\u0948\u0902\u0964",
-          "topic": "Cooking",
-          "language": "hindi",
-          "created_at": "2025-05-28 17:58:46.627000"
-        },
-        {
-          "id": "fafe908c-6be8-436c-b034-150660cc17fa",
-          "front": "\u092e\u0938\u093e\u0932\u094b\u0902 \u0915\u093e \u092e\u0939\u0924\u094d\u0935",
-          "back": "\u092d\u093e\u0930\u0924\u0940\u092f \u092d\u094b\u091c\u0928 \u092e\u0947\u0902 \u092e\u0938\u093e\u0932\u0947 \u0928 \u0915\u0947\u0935\u0932 \u0938\u094d\u0935\u093e\u0926 \u092c\u0922\u093c\u093e\u0924\u0947 \u0939\u0948\u0902, \u092c\u0932\u094d\u0915\u093f \u0938\u094d\u0935\u093e\u0938\u094d\u0925\u094d\u092f \u0915\u0947 \u0932\u093f\u090f \u092d\u0940 \u0932\u093e\u092d\u0926\u093e\u092f\u0915 \u0939\u094b\u0924\u0947 \u0939\u0948\u0902\u0964 \u091c\u0948\u0938\u0947, \u0939\u0932\u094d\u0926\u0940 \u092e\u0947\u0902 \u090f\u0902\u091f\u0940-\u0907\u0902\u092b\u094d\u0932\u0947\u092e\u0947\u091f\u0930\u0940 \u0917\u0941\u0923 \u0939\u094b\u0924\u0947 \u0939\u0948\u0902, \u091c\u0940\u0930\u093e \u092a\u093e\u091a\u0928 \u092e\u0947\u0902 \u092e\u0926\u0926 \u0915\u0930\u0924\u093e \u0939\u0948, \u0914\u0930 \u0927\u0928\u093f\u092f\u093e \u0936\u0930\u0940\u0930 \u0915\u094b \u0920\u0902\u0921\u093e \u0930\u0916\u0928\u0947 \u092e\u0947\u0902 \u0938\u0939\u093e\u092f\u0915 \u0939\u094b\u0924\u093e \u0939\u0948\u0964",
-          "topic": "Cooking",
-          "language": "hindi",
-          "created_at": "2025-05-28 17:58:46.627000"
-        }
-      ],
-      "created_at": "2025-05-28 17:58:46.627000"
-    },
-    {
-      "id": "bad818c3-7d73-436c-8e35-d4a39e5d9690",
+      "id": "1d93c382-e9df-46a8-b106-0e7ecc2ac134",
       "name": "Solar System - English",
       "topic": "Solar System",
       "language": "english",
       "cards": [
         {
-          "id": "3a791cfa-6e89-4ca2-824c-8eff2748dcdf",
+          "id": "8de412e6-d66a-4c08-b5fa-f87ba2155aec",
           "front": "What is the Solar System?",
-          "back": "The Solar System is a gravitationally bound system comprising the Sun and the objects that orbit it, including eight planets, their moons, dwarf planets, asteroids, comets, and other celestial bodies.",
+          "back": "The Solar System is a gravitationally bound system comprising the Sun and the objects that orbit it, including eight planets, their moons, dwarf planets, asteroids, comets, and meteoroids. The Sun contains more than 99% of the total mass of the Solar System and provides the necessary heat and light to sustain life on Earth.",
           "topic": "Solar System",
           "language": "english",
-          "created_at": "2025-05-28 18:01:47.527000"
+          "created_at": "2025-05-28 18:10:59.967000"
         },
         {
-          "id": "b73beb5b-14d3-419d-b55c-9fe19f43fb16",
-          "front": "Name the eight planets of the Solar System.",
-          "back": "The eight planets in the Solar System, in order from the Sun, are Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune.",
+          "id": "42df55c7-730b-49dc-aaf3-1b8d6592b057",
+          "front": "Name the eight planets in the Solar System.",
+          "back": "The eight planets in the Solar System, in order from the Sun, are: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune. Each planet has distinct characteristics, such as size, composition, and atmosphere.",
           "topic": "Solar System",
           "language": "english",
-          "created_at": "2025-05-28 18:01:47.527000"
+          "created_at": "2025-05-28 18:10:59.967000"
         },
         {
-          "id": "92ac4a17-36f4-45ea-84e7-b4d5f060eb07",
-          "front": "What is a dwarf planet?",
-          "back": "A dwarf planet is a celestial body that orbits the Sun and is similar to a planet but does not clear its orbital path of other debris. Examples include Pluto, Eris, and Haumea.",
-          "topic": "Solar System",
-          "language": "english",
-          "created_at": "2025-05-28 18:01:47.527000"
-        },
-        {
-          "id": "7813c8af-6390-4b76-9b4b-a2c74a4c46f6",
+          "id": "d9198a13-86aa-40b0-8c86-6822c971a175",
           "front": "What is the Kuiper Belt?",
-          "back": "The Kuiper Belt is a region of the Solar System beyond the orbit of Neptune, populated with small icy bodies, including dwarf planets and comets. It is similar to the asteroid belt but much larger.",
+          "back": "The Kuiper Belt is a region of the Solar System beyond the orbit of Neptune, extending from about 30 to 55 astronomical units (AU) from the Sun. It is populated with small icy bodies, including dwarf planets like Pluto, Haumea, and Makemake. The Kuiper Belt is significant for studying the early Solar System and the formation of planetary bodies.",
           "topic": "Solar System",
           "language": "english",
-          "created_at": "2025-05-28 18:01:47.527000"
-        },
-        {
-          "id": "906857c2-d1b1-4dc1-8eb7-b1d11377c65f",
-          "front": "Explain the difference between terrestrial and gas giant planets.",
-          "back": "Terrestrial planets, such as Mercury, Venus, Earth, and Mars, are rocky and have solid surfaces. Gas giants, like Jupiter and Saturn, are composed mainly of hydrogen and helium and have thick atmospheres with no well-defined solid surface.",
-          "topic": "Solar System",
-          "language": "english",
-          "created_at": "2025-05-28 18:01:47.527000"
+          "created_at": "2025-05-28 18:10:59.967000"
         }
       ],
-      "created_at": "2025-05-28 18:01:47.527000"
+      "created_at": "2025-05-28 18:10:59.967000"
     },
     {
-      "id": "d4f85885-aece-4339-b8df-8b7dc0294563",
-      "name": "Planets - Hindi",
-      "topic": "Planets",
+      "id": "891aefe1-ed60-44e6-9105-42dce930660c",
+      "name": "Cooking - Hindi",
+      "topic": "Cooking",
       "language": "hindi",
       "cards": [
         {
-          "id": "73051fc4-7b8f-4140-be4c-0ae2bf2e4416",
-          "front": "\u092a\u0943\u0925\u094d\u0935\u0940",
-          "back": "\u092a\u0943\u0925\u094d\u0935\u0940 \u0939\u092e\u093e\u0930\u0947 \u0938\u094c\u0930 \u092e\u0902\u0921\u0932 \u0915\u093e \u0924\u0940\u0938\u0930\u093e \u0917\u094d\u0930\u0939 \u0939\u0948\u0964 \u092f\u0939 \u091c\u0940\u0935\u0928 \u0915\u0947 \u0932\u093f\u090f \u0938\u092c\u0938\u0947 \u0905\u0928\u0941\u0915\u0942\u0932 \u0917\u094d\u0930\u0939 \u0939\u0948 \u0914\u0930 \u0907\u0938\u0915\u093e \u0935\u093e\u0924\u093e\u0935\u0930\u0923 \u0911\u0915\u094d\u0938\u0940\u091c\u0928, \u0928\u093e\u0907\u091f\u094d\u0930\u094b\u091c\u0928 \u0914\u0930 \u0905\u0928\u094d\u092f \u0917\u0948\u0938\u094b\u0902 \u0938\u0947 \u092c\u0928\u093e \u0939\u0948\u0964 \u092a\u0943\u0925\u094d\u0935\u0940 \u092a\u0930 \u091c\u0932 \u0915\u0947 \u0924\u0940\u0928 \u0930\u0942\u092a (\u0920\u094b\u0938, \u0924\u0930\u0932, \u0917\u0948\u0938) \u092a\u093e\u090f \u091c\u093e\u0924\u0947 \u0939\u0948\u0902\u0964",
-          "topic": "Planets",
-          "language": "hindi",
-          "created_at": "2025-05-28 18:01:54.423000"
-        },
-        {
-          "id": "3361c6a0-d87a-4c57-8297-bd107cfec5aa",
-          "front": "\u0938\u0942\u0930\u094d\u092f",
-          "back": "\u0938\u0942\u0930\u094d\u092f \u0939\u092e\u093e\u0930\u0947 \u0938\u094c\u0930 \u092e\u0902\u0921\u0932 \u0915\u093e \u0915\u0947\u0902\u0926\u094d\u0930 \u0939\u0948 \u0914\u0930 \u092f\u0939 \u090f\u0915 \u0924\u093e\u0930\u093e \u0939\u0948\u0964 \u092f\u0939 \u090a\u0930\u094d\u091c\u093e \u0915\u093e \u092e\u0941\u0916\u094d\u092f \u0938\u094d\u0930\u094b\u0924 \u0939\u0948 \u091c\u094b \u092a\u0943\u0925\u094d\u0935\u0940 \u092a\u0930 \u091c\u0940\u0935\u0928 \u0915\u094b \u092c\u0928\u093e\u090f \u0930\u0916\u0928\u0947 \u092e\u0947\u0902 \u0938\u0939\u093e\u092f\u0915 \u0939\u0948\u0964 \u0938\u0942\u0930\u094d\u092f \u0915\u0940 \u0917\u0930\u094d\u092e\u0940 \u0914\u0930 \u0930\u094b\u0936\u0928\u0940 \u0917\u094d\u0930\u0939\u094b\u0902 \u0915\u0947 \u0924\u093e\u092a\u092e\u093e\u0928 \u0915\u094b \u0928\u093f\u092f\u0902\u0924\u094d\u0930\u093f\u0924 \u0915\u0930\u0924\u0940 \u0939\u0948\u0964",
-          "topic": "Planets",
-          "language": "hindi",
-          "created_at": "2025-05-28 18:01:54.423000"
-        },
-        {
-          "id": "4d4e7719-d93c-413a-88aa-57bf635a0ee0",
-          "front": "\u0917\u094d\u0930\u0939\u094b\u0902 \u0915\u0947 \u092a\u094d\u0930\u0915\u093e\u0930",
-          "back": "\u0917\u094d\u0930\u0939 \u0926\u094b \u092a\u094d\u0930\u0915\u093e\u0930 \u0915\u0947 \u0939\u094b\u0924\u0947 \u0939\u0948\u0902: \u091a\u091f\u094d\u091f\u093e\u0928\u0940 (\u091c\u0948\u0938\u0947 \u092e\u0902\u0917\u0932, \u0936\u0941\u0915\u094d\u0930) \u0914\u0930 \u0917\u0948\u0938\u0940\u092f (\u091c\u0948\u0938\u0947 \u092c\u0943\u0939\u0938\u094d\u092a\u0924\u093f, \u0936\u0928\u093f)\u0964 \u091a\u091f\u094d\u091f\u093e\u0928\u0940 \u0917\u094d\u0930\u0939 \u091b\u094b\u091f\u0947 \u0914\u0930 \u0905\u0927\u093f\u0915 \u0918\u0928\u0947 \u0939\u094b\u0924\u0947 \u0939\u0948\u0902, \u091c\u092c\u0915\u093f \u0917\u0948\u0938\u0940\u092f \u0917\u094d\u0930\u0939 \u092c\u0921\u093c\u0947 \u0914\u0930 \u0939\u0932\u094d\u0915\u0947 \u0939\u094b\u0924\u0947 \u0939\u0948\u0902\u0964",
-          "topic": "Planets",
-          "language": "hindi",
-          "created_at": "2025-05-28 18:01:54.423000"
-        },
-        {
-          "id": "4dc7e584-17ab-4498-ae67-f5f81f87eaba",
-          "front": "\u0928\u093e\u0938\u093e",
-          "back": "\u0928\u093e\u0938\u093e (National Aeronautics and Space Administration) \u0905\u092e\u0947\u0930\u093f\u0915\u093e \u0915\u0940 \u0905\u0902\u0924\u0930\u093f\u0915\u094d\u0937 \u090f\u091c\u0947\u0902\u0938\u0940 \u0939\u0948\u0964 \u0907\u0938\u0915\u093e \u092e\u0941\u0916\u094d\u092f \u0915\u093e\u0930\u094d\u092f \u0905\u0902\u0924\u0930\u093f\u0915\u094d\u0937 \u0905\u0928\u094d\u0935\u0947\u0937\u0923, \u0935\u093f\u091c\u094d\u091e\u093e\u0928 \u0905\u0928\u0941\u0938\u0902\u0927\u093e\u0928, \u0914\u0930 \u0928\u0908 \u0924\u0915\u0928\u0940\u0915\u094b\u0902 \u0915\u093e \u0935\u093f\u0915\u093e\u0938 \u0915\u0930\u0928\u093e \u0939\u0948\u0964",
-          "topic": "Planets",
-          "language": "hindi",
-          "created_at": "2025-05-28 18:01:54.423000"
-        },
-        {
-          "id": "4845312d-9576-4b84-aa10-0bfb0ac4f5b0",
-          "front": "\u0917\u094d\u0930\u0939\u094b\u0902 \u0915\u0940 \u0915\u0915\u094d\u0937\u093e\u090f\u0901",
-          "back": "\u0917\u094d\u0930\u0939 \u0905\u092a\u0928\u0940 \u0927\u0941\u0930\u0940 \u092a\u0930 \u0918\u0942\u092e\u0924\u0947 \u0939\u0948\u0902 \u0914\u0930 \u0938\u0942\u0930\u094d\u092f \u0915\u0947 \u091a\u093e\u0930\u094b\u0902 \u0913\u0930 \u0935\u093f\u092d\u093f\u0928\u094d\u0928 \u0915\u0915\u094d\u0937\u093e\u0913\u0902 \u092e\u0947\u0902 \u092f\u093e\u0924\u094d\u0930\u093e \u0915\u0930\u0924\u0947 \u0939\u0948\u0902\u0964 \u0907\u0928 \u0915\u0915\u094d\u0937\u093e\u0913\u0902 \u0915\u0940 \u0906\u0915\u0943\u0924\u093f \u0905\u0902\u0921\u093e\u0915\u093e\u0930 \u0939\u094b\u0924\u0940 \u0939\u0948, \u0914\u0930 \u0917\u094d\u0930\u0939\u094b\u0902 \u0915\u0940 \u0917\u0924\u093f \u0915\u0947 \u0915\u093e\u0930\u0923 \u0926\u093f\u0928-\u0930\u093e\u0924 \u0914\u0930 \u092e\u094c\u0938\u092e \u092c\u0926\u0932\u0924\u0947 \u0939\u0948\u0902\u0964",
-          "topic": "Planets",
-          "language": "hindi",
-          "created_at": "2025-05-28 18:01:54.423000"
-        }
-      ],
-      "created_at": "2025-05-28 18:01:54.423000"
-    },
-    {
-      "id": "1bd52af3-7fab-4812-a11e-8e450ab97a18",
-      "name": "Astronomy - Spanish",
-      "topic": "Astronomy",
-      "language": "spanish",
-      "cards": [
-        {
-          "id": "eec40d12-41d3-47f1-9a79-b3d3048c4805",
-          "front": "\u00bfQu\u00e9 es la astronom\u00eda?",
-          "back": "La astronom\u00eda es la ciencia que estudia los cuerpos celestes, como estrellas, planetas, cometas y galaxias, as\u00ed como los fen\u00f3menos que ocurren fuera de la atm\u00f3sfera terrestre. Se trata de una disciplina que busca comprender el universo, su origen, evoluci\u00f3n y estructura.",
-          "topic": "Astronomy",
-          "language": "spanish",
-          "created_at": "2025-05-28 18:02:29.732000"
-        },
-        {
-          "id": "d9cadc5c-04d3-4ef6-8bb0-4be5baac9efd",
-          "front": "Sistema Solar",
-          "back": "El Sistema Solar es un conjunto de cuerpos celestes que orbitan alrededor del Sol, incluyendo ocho planetas, sus lunas, asteroides, cometas y otros objetos. Los planetas m\u00e1s cercanos al Sol son Mercurio, Venus, Tierra y Marte, mientras que J\u00fapiter, Saturno, Urano y Neptuno son los planetas gaseosos.",
-          "topic": "Astronomy",
-          "language": "spanish",
-          "created_at": "2025-05-28 18:02:29.732000"
-        },
-        {
-          "id": "3e314dfb-8e94-44f2-b756-939a2e146f6f",
-          "front": "Galaxia",
-          "back": "Una galaxia es un vasto sistema de estrellas, gas, polvo y materia oscura, unidos por la gravedad. La V\u00eda L\u00e1ctea, que es la galaxia en la que se encuentra nuestro Sistema Solar, contiene miles de millones de estrellas y tiene forma espiral. Existen diferentes tipos de galaxias, incluidas el\u00edpticas, espirales e irregulares.",
-          "topic": "Astronomy",
-          "language": "spanish",
-          "created_at": "2025-05-28 18:02:29.732000"
-        }
-      ],
-      "created_at": "2025-05-28 18:02:29.732000"
-    },
-    {
-      "id": "90c0a202-fdf4-43a6-bf81-4e4b6b9f6003",
-      "name": "Cooking - Gujarati",
-      "topic": "Cooking",
-      "language": "gujarati",
-      "cards": [
-        {
-          "id": "9aea8349-3ae2-44f5-8c8b-610c38ff497b",
-          "front": "\u0aaa\u0abe\u0a95\u0a95\u0ab2\u0abe",
-          "back": "\u0aaa\u0abe\u0a95\u0a95\u0ab2\u0abe \u0a8f \u0a96\u0acb\u0ab0\u0abe\u0a95 \u0aa4\u0ac8\u0aaf\u0abe\u0ab0 \u0a95\u0ab0\u0ab5\u0abe\u0aa8\u0ac0 \u0a86\u0ab0\u0acd\u0a9f \u0a85\u0aa8\u0ac7 \u0ab5\u0abf\u0a9c\u0acd\u0a9e\u0abe\u0aa8 \u0a9b\u0ac7. \u0aa4\u0ac7\u0aae\u0abe\u0a82 \u0ab5\u0abf\u0ab5\u0abf\u0aa7 \u0ab8\u0abe\u0aae\u0a97\u0acd\u0ab0\u0ac0, \u0aaa\u0aa6\u0acd\u0aa7\u0aa4\u0abf\u0a93 \u0a85\u0aa8\u0ac7 \u0ab0\u0ab8\u0acb\u0a88\u0aa8\u0abe \u0ab8\u0abe\u0aa7\u0aa8\u0acb\u0aa8\u0acb \u0ab8\u0aae\u0abe\u0ab5\u0ac7\u0ab6 \u0aa5\u0abe\u0aaf \u0a9b\u0ac7, \u0a9c\u0ac7 \u0ab8\u0acd\u0ab5\u0abe\u0aa6\u0abf\u0ab7\u0acd\u0a9f \u0a85\u0aa8\u0ac7 \u0aaa\u0acb\u0ab7\u0aa3\u0aaf\u0ac1\u0a95\u0acd\u0aa4 \u0ab5\u0abe\u0aa8\u0a97\u0ac0\u0a93 \u0a8a\u0aad\u0ac0 \u0a95\u0ab0\u0ab5\u0abe \u0aae\u0abe\u0a9f\u0ac7 \u0ab5\u0aaa\u0ab0\u0abe\u0aaf \u0a9b\u0ac7.",
+          "id": "147ccf9c-12e9-44ad-9ea9-89421b58eba9",
+          "front": "\u092d\u094b\u091c\u0928 \u092a\u0915\u093e\u0928\u0947 \u0915\u0940 \u0935\u093f\u0927\u093f\u092f\u093e\u0901",
+          "back": "\u092d\u094b\u091c\u0928 \u092a\u0915\u093e\u0928\u0947 \u0915\u0940 \u0915\u0908 \u0935\u093f\u0927\u093f\u092f\u093e\u0901 \u0939\u094b\u0924\u0940 \u0939\u0948\u0902, \u091c\u0948\u0938\u0947 \u0915\u093f \u0909\u092c\u093e\u0932\u0928\u093e, \u092d\u0942\u0928\u0928\u093e, \u092d\u093e\u092a \u092e\u0947\u0902 \u092a\u0915\u093e\u0928\u093e, \u0914\u0930 \u0924\u0932\u0928\u093e\u0964 \u092f\u0947 \u0935\u093f\u0927\u093f\u092f\u093e\u0901 \u0938\u093e\u092e\u0917\u094d\u0930\u0940 \u0915\u0947 \u092a\u094b\u0937\u0923 \u0924\u0924\u094d\u0935\u094b\u0902 \u0915\u094b \u092c\u0928\u093e\u090f \u0930\u0916\u0928\u0947 \u0914\u0930 \u0938\u094d\u0935\u093e\u0926 \u092c\u0922\u093c\u093e\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u092e\u0939\u0924\u094d\u0935\u092a\u0942\u0930\u094d\u0923 \u0939\u0948\u0902\u0964",
           "topic": "Cooking",
-          "language": "gujarati",
-          "created_at": "2025-05-28 18:08:58.721000"
+          "language": "hindi",
+          "created_at": "2025-05-28 18:11:03.824000"
         },
         {
-          "id": "f2ab86f6-8fdd-4244-b476-a1b203d14b9c",
-          "front": "\u0aae\u0ab8\u0abe\u0ab2\u0abe",
-          "back": "\u0aae\u0ab8\u0abe\u0ab2\u0abe \u0a8f \u0a8f\u0ab5\u0ac0 \u0ab8\u0abe\u0aae\u0a97\u0acd\u0ab0\u0ac0 \u0a9b\u0ac7 \u0a9c\u0ac7 \u0a96\u0acb\u0ab0\u0abe\u0a95\u0aae\u0abe\u0a82 \u0ab8\u0acd\u0ab5\u0abe\u0aa6 \u0a85\u0aa8\u0ac7 \u0ab8\u0ac1\u0a97\u0a82\u0aa7 \u0ab5\u0aa7\u0abe\u0ab0\u0ab5\u0abe \u0aae\u0abe\u0a9f\u0ac7 \u0ab5\u0aaa\u0ab0\u0abe\u0aaf \u0a9b\u0ac7. \u0aad\u0abe\u0ab0\u0aa4\u0ac0\u0aaf \u0ab0\u0ab8\u0acb\u0a88\u0aae\u0abe\u0a82 \u0aae\u0ab8\u0abe\u0ab2\u0abe\u0a93\u0aa8\u0ac1\u0a82 \u0ab5\u0abf\u0ab6\u0ac7\u0ab7 \u0aae\u0ab9\u0aa4\u0acd\u0ab5 \u0a9b\u0ac7, \u0a9c\u0ac7\u0aae \u0a95\u0ac7 \u0a9c\u0ac0\u0ab0\u0ac1\u0a82, \u0aa7\u0abe\u0aa3\u0acb, \u0aae\u0ac0\u0aa0\u0ac1\u0a82, \u0a85\u0aa8\u0ac7 \u0aae\u0ab0\u0ac0.",
+          "id": "7fbcc8c8-6184-4b53-9d88-0b26402a3be7",
+          "front": "\u092e\u0938\u093e\u0932\u094b\u0902 \u0915\u093e \u092e\u0939\u0924\u094d\u0935",
+          "back": "\u092d\u093e\u0930\u0924\u0940\u092f \u0916\u093e\u0928\u093e \u092a\u0915\u093e\u0928\u0947 \u092e\u0947\u0902 \u092e\u0938\u093e\u0932\u0947 \u090f\u0915 \u092e\u0939\u0924\u094d\u0935\u092a\u0942\u0930\u094d\u0923 \u092d\u0942\u092e\u093f\u0915\u093e \u0928\u093f\u092d\u093e\u0924\u0947 \u0939\u0948\u0902\u0964 \u092f\u0947 \u0928 \u0915\u0947\u0935\u0932 \u0938\u094d\u0935\u093e\u0926 \u0914\u0930 \u0938\u0941\u0917\u0902\u0927 \u0926\u0947\u0924\u0947 \u0939\u0948\u0902, \u092c\u0932\u094d\u0915\u093f \u0915\u0908 \u0938\u094d\u0935\u093e\u0938\u094d\u0925\u094d\u092f \u0932\u093e\u092d \u092d\u0940 \u092a\u094d\u0930\u0926\u093e\u0928 \u0915\u0930\u0924\u0947 \u0939\u0948\u0902\u0964 \u091c\u0948\u0938\u0947, \u0939\u0932\u094d\u0926\u0940 \u090f\u0902\u091f\u0940-\u0907\u0902\u092b\u094d\u0932\u0947\u092e\u0947\u091f\u0930\u0940 \u0939\u094b\u0924\u0940 \u0939\u0948, \u091c\u092c\u0915\u093f \u091c\u0940\u0930\u093e \u092a\u093e\u091a\u0928 \u092e\u0947\u0902 \u092e\u0926\u0926 \u0915\u0930\u0924\u093e \u0939\u0948\u0964",
           "topic": "Cooking",
-          "language": "gujarati",
-          "created_at": "2025-05-28 18:08:58.721000"
+          "language": "hindi",
+          "created_at": "2025-05-28 18:11:03.824000"
         },
         {
-          "id": "98c19798-8bf3-472e-9265-11c7d3c529fe",
-          "front": "\u0ab8\u0acd\u0ab5\u0abe\u0ab8\u0acd\u0aa5\u0acd\u0aaf\u0ab5\u0ab0\u0acd\u0aa7\u0a95 \u0a96\u0acb\u0ab0\u0abe\u0a95",
-          "back": "\u0ab8\u0acd\u0ab5\u0abe\u0ab8\u0acd\u0aa5\u0acd\u0aaf\u0ab5\u0ab0\u0acd\u0aa7\u0a95 \u0a96\u0acb\u0ab0\u0abe\u0a95 \u0a8f\u0ab5\u0abe \u0a96\u0acb\u0ab0\u0abe\u0a95 \u0a9b\u0ac7, \u0a9c\u0ac7 \u0ab6\u0ab0\u0ac0\u0ab0\u0aa8\u0ac7 \u0a86\u0aa7\u0abe\u0ab0\u0aad\u0ac2\u0aa4 \u0aaa\u0acb\u0ab7\u0aa3 \u0a86\u0aaa\u0ac7 \u0a9b\u0ac7. \u0aa4\u0ac7\u0aae\u0abe\u0a82 \u0aab\u0ab3, \u0ab6\u0abe\u0a95\u0aad\u0abe\u0a9c\u0ac0, \u0a85\u0a96\u0ab0\u0acb\u0a9f \u0a85\u0aa8\u0ac7 whole grains\u0aa8\u0acb \u0ab8\u0aae\u0abe\u0ab5\u0ac7\u0ab6 \u0aa5\u0abe\u0aaf \u0a9b\u0ac7, \u0a9c\u0ac7 \u0a86\u0aaa\u0aa3\u0abe \u0a86\u0ab0\u0acb\u0a97\u0acd\u0aaf \u0aae\u0abe\u0a9f\u0ac7 \u0ab2\u0abe\u0aad\u0aa6\u0abe\u0aaf\u0a95 \u0a9b\u0ac7.",
+          "id": "d3d97c72-041c-4d64-8c81-8e24d845a601",
+          "front": "\u0938\u0941\u0930\u0915\u094d\u0937\u093f\u0924 \u092d\u094b\u091c\u0928 \u092a\u0915\u093e\u0928\u0947 \u0915\u0947 \u0924\u0930\u0940\u0915\u0947",
+          "back": "\u092d\u094b\u091c\u0928 \u092a\u0915\u093e\u0928\u0947 \u0915\u0947 \u0926\u094c\u0930\u093e\u0928 \u0938\u092b\u093e\u0908 \u0915\u093e \u0927\u094d\u092f\u093e\u0928 \u0930\u0916\u0928\u093e \u0906\u0935\u0936\u094d\u092f\u0915 \u0939\u0948\u0964 \u0938\u092c\u094d\u091c\u093f\u092f\u094b\u0902 \u0914\u0930 \u092e\u093e\u0902\u0938 \u0915\u094b \u0905\u091a\u094d\u091b\u0947 \u0938\u0947 \u0927\u094b\u0928\u093e, \u0915\u091a\u094d\u091a\u0947 \u0914\u0930 \u092a\u0915\u0947 \u0916\u093e\u0926\u094d\u092f \u092a\u0926\u093e\u0930\u094d\u0925\u094b\u0902 \u0915\u094b \u0905\u0932\u0917 \u0930\u0916\u0928\u093e, \u0914\u0930 \u0938\u0939\u0940 \u0924\u093e\u092a\u092e\u093e\u0928 \u092a\u0930 \u0916\u093e\u0928\u093e \u092a\u0915\u093e\u0928\u093e, \u0938\u092d\u0940 \u0916\u093e\u0926\u094d\u092f \u091c\u0928\u093f\u0924 \u0930\u094b\u0917\u094b\u0902 \u0938\u0947 \u092c\u091a\u0928\u0947 \u092e\u0947\u0902 \u092e\u0926\u0926 \u0915\u0930\u0924\u0947 \u0939\u0948\u0902\u0964",
           "topic": "Cooking",
-          "language": "gujarati",
-          "created_at": "2025-05-28 18:08:58.721000"
+          "language": "hindi",
+          "created_at": "2025-05-28 18:11:03.824000"
         }
       ],
-      "created_at": "2025-05-28 18:08:58.721000"
-    },
-    {
-      "id": "6a2834eb-821b-41c1-9909-2dea8ad83f16",
-      "name": "Science - Marathi",
-      "topic": "Science",
-      "language": "marathi",
-      "cards": [
-        {
-          "id": "80213b58-858d-48b6-8be0-97d4887ee12f",
-          "front": "\u092a\u0926\u093e\u0930\u094d\u0925\u093e\u0902\u091a\u0947 \u0924\u0940\u0928 \u0905\u0935\u0938\u094d\u0925\u093e\u0902",
-          "back": "\u092a\u0926\u093e\u0930\u094d\u0925 \u092e\u0941\u0916\u094d\u092f\u0924\u0903 \u0924\u0940\u0928 \u0905\u0935\u0938\u094d\u0925\u093e\u0902\u092e\u0927\u094d\u092f\u0947 \u0905\u0938\u094d\u0924\u093f\u0924\u094d\u0935\u093e\u0924 \u0905\u0938\u0924\u094b: \u0920\u094b\u0938 (Solid), \u0926\u094d\u0930\u0935 (Liquid), \u0906\u0923\u093f \u0935\u093e\u092f\u0942 (Gas). \u0920\u094b\u0938 \u092a\u0926\u093e\u0930\u094d\u0925\u093e\u0902\u092e\u0927\u094d\u092f\u0947 \u0906\u0915\u093e\u0930 \u0928\u093f\u0936\u094d\u091a\u093f\u0924 \u0905\u0938\u0924\u094b, \u0926\u094d\u0930\u0935 \u092a\u0926\u093e\u0930\u094d\u0925\u093e\u0902\u092e\u0927\u094d\u092f\u0947 \u0906\u0915\u093e\u0930 \u092c\u0926\u0932\u0924\u093e \u092f\u0947\u0924\u094b \u092a\u0923 \u0924\u094d\u092f\u093e\u0902\u091a\u0940 \u092e\u093e\u0924\u094d\u0930\u093e \u0928\u093f\u0936\u094d\u091a\u093f\u0924 \u0905\u0938\u0924\u0947, \u0906\u0923\u093f \u0935\u093e\u092f\u0942 \u092a\u0926\u093e\u0930\u094d\u0925\u093e\u0902\u092e\u0927\u094d\u092f\u0947 \u0906\u0915\u093e\u0930 \u0906\u0923\u093f \u092e\u093e\u0924\u094d\u0930\u093e \u0926\u094b\u0928\u094d\u0939\u0940 \u0905\u0928\u093f\u0936\u094d\u091a\u093f\u0924 \u0905\u0938\u0924\u093e\u0924.",
-          "topic": "Science",
-          "language": "marathi",
-          "created_at": "2025-05-28 18:09:08.520000"
-        },
-        {
-          "id": "acc466d8-3d73-4e6f-b199-4c8016038ef1",
-          "front": "\u0917\u094d\u0930\u0939\u093e\u0902\u091a\u0947 \u0938\u094c\u0930 \u092a\u094d\u0930\u0923\u093e\u0932\u0940\u0924\u0940\u0932 \u0938\u094d\u0925\u093e\u0928",
-          "back": "\u0938\u094c\u0930 \u092a\u094d\u0930\u0923\u093e\u0932\u0940\u092e\u0927\u094d\u092f\u0947 \u0906\u0920 \u0917\u094d\u0930\u0939 \u0906\u0939\u0947\u0924: \u092c\u0941\u0927, \u0936\u0941\u0915\u094d\u0930, \u092a\u0943\u0925\u094d\u0935\u0940, \u092e\u0902\u0917\u0933, \u0917\u0941\u0930\u0941, \u0936\u0928\u093f, \u0909\u0930\u093e\u0928\u0938, \u0906\u0923\u093f \u0928\u0947\u092a\u091a\u094d\u092f\u0942\u0928. \u092f\u093e \u0917\u094d\u0930\u0939\u093e\u0902\u091a\u0947 \u0938\u0942\u0930\u094d\u092f\u093e\u092d\u094b\u0935\u0924\u0940 \u092b\u093f\u0930\u0923\u0947 \u0924\u094d\u092f\u093e\u0902\u091a\u094d\u092f\u093e \u0938\u094d\u0925\u093e\u0928\u0940\u0915 \u0917\u0941\u0930\u0941\u0924\u094d\u0935\u093e\u0915\u0930\u094d\u0937\u0923\u093e\u092e\u0941\u0933\u0947 \u0939\u094b\u0924\u0947, \u091c\u094d\u092f\u093e\u092e\u0941\u0933\u0947 \u0924\u0947 \u0938\u0942\u0930\u094d\u092f\u093e\u091a\u094d\u092f\u093e \u0915\u0915\u094d\u0937\u0947\u0924 \u0920\u0947\u0935\u0932\u0947 \u091c\u093e\u0924\u093e\u0924.",
-          "topic": "Science",
-          "language": "marathi",
-          "created_at": "2025-05-28 18:09:08.520000"
-        },
-        {
-          "id": "dbe62cb5-075e-434a-b455-148e80de7178",
-          "front": "\u092a\u0930\u093f\u0935\u0930\u094d\u0924\u0928\u093e\u091a\u0947 \u092a\u094d\u0930\u0915\u093e\u0930",
-          "back": "\u092d\u094c\u0924\u093f\u0915 \u092a\u0930\u093f\u0935\u0930\u094d\u0924\u0928 \u0906\u0923\u093f \u0930\u093e\u0938\u093e\u092f\u0928\u093f\u0915 \u092a\u0930\u093f\u0935\u0930\u094d\u0924\u0928 \u0939\u0947 \u0926\u094b\u0928 \u092a\u094d\u0930\u092e\u0941\u0916 \u092a\u094d\u0930\u0915\u093e\u0930\u091a\u0947 \u092a\u0930\u093f\u0935\u0930\u094d\u0924\u0928 \u0906\u0939\u0947\u0924. \u092d\u094c\u0924\u093f\u0915 \u092a\u0930\u093f\u0935\u0930\u094d\u0924\u0928\u093e\u092e\u0927\u094d\u092f\u0947 \u092a\u0926\u093e\u0930\u094d\u0925\u093e\u091a\u093e \u0906\u0915\u093e\u0930 \u0915\u093f\u0902\u0935\u093e \u0905\u0935\u0938\u094d\u0925\u093e \u092c\u0926\u0932\u0924\u0947 \u092a\u0923 \u0924\u094d\u092f\u093e\u091a\u0940 \u0930\u093e\u0938\u093e\u092f\u0928\u093f\u0915 \u0938\u0902\u0930\u091a\u0928\u093e \u0924\u0940\u091a \u0930\u093e\u0939\u0924\u0947, \u0924\u0930 \u0930\u093e\u0938\u093e\u092f\u0928\u093f\u0915 \u092a\u0930\u093f\u0935\u0930\u094d\u0924\u0928\u093e\u092e\u0927\u094d\u092f\u0947 \u092a\u0926\u093e\u0930\u094d\u0925\u093e\u091a\u0940 \u0930\u093e\u0938\u093e\u092f\u0928\u093f\u0915 \u0938\u0902\u0930\u091a\u0928\u093e \u092c\u0926\u0932\u0924\u0947, \u0928\u0935\u0940\u0928 \u092a\u0926\u093e\u0930\u094d\u0925 \u0924\u092f\u093e\u0930 \u0939\u094b\u0924\u093e\u0924.",
-          "topic": "Science",
-          "language": "marathi",
-          "created_at": "2025-05-28 18:09:08.520000"
-        }
-      ],
-      "created_at": "2025-05-28 18:09:08.520000"
+      "created_at": "2025-05-28 18:11:03.824000"
     }
   ]
 }
