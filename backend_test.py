@@ -10,6 +10,7 @@ class FlashCardAPITester:
         self.base_url = base_url
         self.tests_run = 0
         self.tests_passed = 0
+        # Using the provided API key for testing
         self.sutra_api_key = "sutra_j6OBb2v3MIAoiyhhVE7h8W3xW0NhNN3J1CicKrLCLVaocxb0feQpGXQWq16t"
         self.test_deck_ids = []
 
